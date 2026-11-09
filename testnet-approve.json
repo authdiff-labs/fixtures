@@ -1,0 +1,43 @@
+{
+  "network": "testnet",
+  "endpoint": "https://soroban-testnet.stellar.org",
+  "contract": "CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC",
+  "function": "approve",
+  "mode": "unsigned RPC simulation only",
+  "capturedAt": "2026-11-09T10:03:57.915Z",
+  "before": {
+    "source": "GAUA6YRL7KQPEW2XUJPZLMCYLPBOQJGLQCSIBGOWSRC64ZBOHF7Y27HA",
+    "auth": [
+      "AAAAAAAAAAAAAAAB15KLcsJwPM/q9+uf9O9NUEpVqLl5/JtFDqLIQrTRzmEAAAAHYXBwcm92ZQAAAAAEAAAAEgAAAAAAAAAAKA9iK/qg8ltXol+VsFhbwugky4CkgJnWlEXuZC45f40AAAASAAAAAAAAAAAEIJrI5t1CAab/fuWiyBCTwN52S1Fe6Pgmd4SB60BF1wAAAAoAAAAAAAAAAAAAAAAAAABkAAAAAwBWC7gAAAAA"
+    ],
+    "latestLedger": 5638997
+  },
+  "after": {
+    "source": "GAUA6YRL7KQPEW2XUJPZLMCYLPBOQJGLQCSIBGOWSRC64ZBOHF7Y27HA",
+    "auth": [
+      "AAAAAAAAAAAAAAAB15KLcsJwPM/q9+uf9O9NUEpVqLl5/JtFDqLIQrTRzmEAAAAHYXBwcm92ZQAAAAAEAAAAEgAAAAAAAAAAKA9iK/qg8ltXol+VsFhbwugky4CkgJnWlEXuZC45f40AAAASAAAAAAAAAAAEIJrI5t1CAab/fuWiyBCTwN52S1Fe6Pgmd4SB60BF1wAAAAoAAAAAAAAAAAAAAAAAAAD6AAAAAwBWC7gAAAAA"
+    ],
+    "latestLedger": 5638998
+  },
+  "changes": [
+    {
+      "kind": "argument-changed",
+      "path": [
+        0,
+        "root",
+        "args",
+        2
+      ],
+      "before": {
+        "type": "i128",
+        "xdr": "AAAACgAAAAAAAAAAAAAAAAAAAGQ=",
+        "decimal": "100"
+      },
+      "after": {
+        "type": "i128",
+        "xdr": "AAAACgAAAAAAAAAAAAAAAAAAAPo=",
+        "decimal": "250"
+      }
+    }
+  ]
+}
