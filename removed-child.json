@@ -1,0 +1,46 @@
+{
+  "before": [
+    {
+      "principal": "fixture-actor",
+      "credential": "address-v2",
+      "root": {
+        "contract": "fixture-router",
+        "method": "review",
+        "args": [],
+        "children": [
+          {
+            "contract": "fixture-leaf",
+            "method": "record",
+            "args": [],
+            "children": []
+          },
+          {
+            "contract": "fixture-leaf",
+            "method": "audit",
+            "args": [],
+            "children": []
+          }
+        ]
+      }
+    }
+  ],
+  "after": [
+    {
+      "principal": "fixture-actor",
+      "credential": "address-v2",
+      "root": {
+        "contract": "fixture-router",
+        "method": "review",
+        "args": [],
+        "children": [
+          {
+            "contract": "fixture-leaf",
+            "method": "record",
+            "args": [],
+            "children": []
+          }
+        ]
+      }
+    }
+  ]
+}

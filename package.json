@@ -1,0 +1,14 @@
+{
+  "name": "@authdiff/fixtures",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Reproducible baseline and candidate cases for authorization review",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}

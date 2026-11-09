@@ -1,0 +1,61 @@
+{
+  "cases": [
+    {
+      "file": "amount-change.json",
+      "description": "Nested i128 amount changes from 100 to 250",
+      "expected": [
+        { "kind": "argument-changed", "path": [0, "root", "children", 0, "args", 0] }
+      ]
+    },
+    {
+      "file": "added-child.json",
+      "description": "A second child invocation is added in order",
+      "expected": [
+        { "kind": "call-added", "path": [0, "root", "children", 1] }
+      ]
+    },
+    {
+      "file": "removed-child.json",
+      "description": "A child invocation is removed from the end",
+      "expected": [
+        { "kind": "call-removed", "path": [0, "root", "children", 1] }
+      ]
+    },
+    {
+      "file": "reordered-children.json",
+      "description": "Two siblings swap positions",
+      "expected": [
+        { "kind": "call-replaced", "path": [0, "root", "children", 0] },
+        { "kind": "call-replaced", "path": [0, "root", "children", 1] }
+      ]
+    },
+    {
+      "file": "principal-change.json",
+      "description": "The same credential authorizes from a different principal",
+      "expected": [
+        { "kind": "principal-changed", "path": [0] }
+      ]
+    },
+    {
+      "file": "credential-change.json",
+      "description": "The principal switches credential type",
+      "expected": [
+        { "kind": "credential-changed", "path": [0] }
+      ]
+    },
+    {
+      "file": "authorization-added.json",
+      "description": "A candidate gains its first authorization entry",
+      "expected": [
+        { "kind": "authorization-added", "path": [0] }
+      ]
+    },
+    {
+      "file": "authorization-removed.json",
+      "description": "A candidate drops its only authorization entry",
+      "expected": [
+        { "kind": "authorization-removed", "path": [0] }
+      ]
+    }
+  ]
+}

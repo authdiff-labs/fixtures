@@ -1,0 +1,15 @@
+{
+  "before": [],
+  "after": [
+    {
+      "principal": "fixture-actor",
+      "credential": "address-v2",
+      "root": {
+        "contract": "fixture-router",
+        "method": "review",
+        "args": [],
+        "children": []
+      }
+    }
+  ]
+}
